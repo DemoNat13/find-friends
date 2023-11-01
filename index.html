@@ -1,10 +1,10 @@
 <h1>Hello world</h1>
 <script type="text/javascript">
-  VK.Api.call('users.get', { user_ids: 829780439, fields: 'bdate' }, function(r) {
-  if(r.response) {
-  console.log(r.response[0].bdate);
-  }
-  });
+  // VK.Api.call('users.get', { user_ids: 829780439, fields: 'bdate' }, function(r) {
+  // if(r.response) {
+  // console.log(r.response[0].bdate);
+  // }
+  // });
   async function testGet() {
     const res = await fetch('https://api.vk.com/method/status.get?user_id=829780439&v=5.131');
     console.log(res, 'testGet');
