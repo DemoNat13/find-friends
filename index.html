@@ -6,11 +6,13 @@
   // }
   // });
   async function testGet() {
-    const res = await fetch('https://api.vk.com/method/status.get?user_id=51782778&v=5.131',  {
+    const res = await fetch('https://api.vk.com/method/users.get?user_id=829780439&v=5.131',  {
       method: 'post',
       headers: {
-        'Authorization': 'Bearer vk1.a.8ENMkryKi4mjW-zFfDXrKMIx61koBUUazfRE-ETUNd_hYkstGDuR6trPpwyoPaYG0b7hKPD5ePXH0taUZSgS0DrVSigIxIAe8w8JW36ddwsYHR2kS9wS7T-p9p0d7E3x2yBf6aW55DY7fCXfXcbaFiaQ9B-QmxlXyyoMr023z5oA7xbO9pTsES3-we0A-UP82u7VkhLizBDN7IktIoAM1w'
-      }
+        'Authorization': 'Bearer vk1.a.8ENMkryKi4mjW-zFfDXrKMIx61koBUUazfRE-ETUNd_hYkstGDuR6trPpwyoPaYG0b7hKPD5ePXH0taUZSgS0DrVSigIxIAe8w8JW36ddwsYHR2kS9wS7T-p9p0d7E3x2yBf6aW55DY7fCXfXcbaFiaQ9B-QmxlXyyoMr023z5oA7xbO9pTsES3-we0A-UP82u7VkhLizBDN7IktIoAM1w',
+        'Access-Control-Allow-Origin': 'https://demonat13.github.io/find-friends/',
+      },
+      mode: 'no-cors',
     });
     console.log(res, 'testGet');
     
