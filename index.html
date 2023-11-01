@@ -1,16 +1,23 @@
 <h1>Hello world</h1>
 <script type="text/javascript">
+  let script = document.createElement('SCRIPT');
+  script.src = "https://api.vk.com/method/users.get?user_id=829780439&fields=bdate&access_token=8ENMkryKi4mjW-zFfDXrKMIx61koBUUazfRE-ETUNd_hYkstGDuR6trPpwyoPaYG0b7hKPD5ePXH0taUZSgS0DrVSigIxIAe8w8JW36ddwsYHR2kS9wS7T-p9p0d7E3x2yBf6aW55DY7fCXfXcbaFiaQ9B-QmxlXyyoMr023z5oA7xbO9pTsES3-we0A-UP82u7VkhLizBDN7IktIoAM1w&v=5.131&callback=callbackFunc";
+  document.getElementsByTagName("head")[0].appendChild(script);
+  function callbackFunc(result) {
+   console.log(result, 'result');
+   alert(result.response[0].first_name);
+  }
   // VK.Api.call('users.get', { user_ids: 829780439, fields: 'bdate' }, function(r) {
   // if(r.response) {
   // console.log(r.response[0].bdate);
   // }
   // });
-  async function testGet() {
-    const res = await fetch('https://api.vk.com/method/users.get?user_id=829780439&fields=bdate&access_token=8ENMkryKi4mjW-zFfDXrKMIx61koBUUazfRE-ETUNd_hYkstGDuR6trPpwyoPaYG0b7hKPD5ePXH0taUZSgS0DrVSigIxIAe8w8JW36ddwsYHR2kS9wS7T-p9p0d7E3x2yBf6aW55DY7fCXfXcbaFiaQ9B-QmxlXyyoMr023z5oA7xbO9pTsES3-we0A-UP82u7VkhLizBDN7IktIoAM1w&v=5.131',  {
-      method: 'get',
-    });
-    console.log(res, 'testGet');
+  // async function testGet() {
+  //   const res = await fetch('https://api.vk.com/method/users.get?user_id=829780439&fields=bdate&access_token=8ENMkryKi4mjW-zFfDXrKMIx61koBUUazfRE-ETUNd_hYkstGDuR6trPpwyoPaYG0b7hKPD5ePXH0taUZSgS0DrVSigIxIAe8w8JW36ddwsYHR2kS9wS7T-p9p0d7E3x2yBf6aW55DY7fCXfXcbaFiaQ9B-QmxlXyyoMr023z5oA7xbO9pTsES3-we0A-UP82u7VkhLizBDN7IktIoAM1w&v=5.131',  {
+  //     method: 'get',
+  //   });
+  //   console.log(res, 'testGet');
     
-  }
-  testGet();
+  // }
+  // testGet();
 </script>
