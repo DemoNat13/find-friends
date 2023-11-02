@@ -1,7 +1,7 @@
 <h1>Hello world</h1>
 <script type="text/javascript">
   let script = document.createElement('SCRIPT');
-  script.src = "https://api.vk.com/method/users.get?user_id=829780439&fields=bdate&access_token=vk1.a.cxSD9nITcI-2U-N_ZEvBPfMuX4qX-efaX-O3mRpjfEVsw6KDRNXPxlD62VR0X0-tb0q_4yT6-5pFWptJNvmC2BZ7OgVRDajLJXBbSg4WgvVfNnqCJ1NqoByVvTH1u2K1QDmxIkUgmkAw7NyOn64sBQGunPGVStXsj1ILkMAMVWR0vV2jusYU9NNPORF_Q6eb&v=5.131&callback=callbackFunc";
+  script.src = "https://api.vk.com/method/friends.get?user_id=829780439&fields=bdate&access_token=vk1.a.cxSD9nITcI-2U-N_ZEvBPfMuX4qX-efaX-O3mRpjfEVsw6KDRNXPxlD62VR0X0-tb0q_4yT6-5pFWptJNvmC2BZ7OgVRDajLJXBbSg4WgvVfNnqCJ1NqoByVvTH1u2K1QDmxIkUgmkAw7NyOn64sBQGunPGVStXsj1ILkMAMVWR0vV2jusYU9NNPORF_Q6eb&v=5.131&callback=callbackFunc";
   document.getElementsByTagName("head")[0].appendChild(script);
   function callbackFunc(result) {
    console.log(result, 'result');
