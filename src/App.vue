@@ -2,27 +2,20 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
-      dark
+      prominent
+      color="#dfcbd2"
+      elevation="7"
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+      <div class="app__icon d-flex align-center">
+        <v-icon
+          large
+        >
+          mdi-search-web
+        </v-icon>
+        <div class="app__logo flex flex-column">
+          <h1>FindFriends</h1>
+          <p class="my-0">search friendly</p>
+        </div>
       </div>
 
       <v-spacer></v-spacer>
@@ -53,3 +46,18 @@ export default {
   }),
 };
 </script>
+<style lang="scss">
+  * {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .v-app-bar {
+    color: #636760 !important;
+    .app__logo {
+      margin-left: 10px;
+    }
+  }
+  .v-main__wrap {
+    padding: 40px;
+    background-color: rgba(235, 221, 220, 0.5);
+  }
+</style>
