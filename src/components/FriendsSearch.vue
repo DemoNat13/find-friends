@@ -102,7 +102,7 @@
         <v-subheader
           class="list__header"
         >
-          Друзья
+          Друзьяяяяя
         </v-subheader>
         <v-list-item-group
           v-model="selectedItem"
